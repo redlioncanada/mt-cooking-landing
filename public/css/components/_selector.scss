@@ -1,0 +1,369 @@
+product-selector {
+	width: 80%;
+	position: relative;
+    
+    h2{
+        font-size: 3em;
+        text-align: center;
+        font-weight: 800;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1366px) {
+            font-size: 2em;
+            margin-top: 35px;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 479px) {
+            height: 20px;
+        }
+    }
+    
+   #french-door, #side-by-side, #bottom-freezer, #under-counter, #built-in{
+        opacity: 0;
+    }
+    
+    product-slides {
+        display: block;
+        width: 100%;
+
+        @media screen and (max-width: 479px) {
+            margin-top: 40px;
+        }
+    }
+    .wp-refer-landing-product-slide{
+        position: absolute;
+        width: 943px;
+    }
+    product-slide {
+        height: 420px;
+        display: inline-block;
+        position: relative;
+        top: -170px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            position: absolute;
+            height: initial;
+            top: initial;
+            width: 100%;
+            left: 0;
+        }
+
+        #freezers img {
+            margin-left: -50px;
+
+            @media screen and (max-width: $mobileBreakpoint) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobileBreakpoint) {
+        product-slide:first-of-type {
+            position: relative;
+        }
+    }
+
+    > .row{
+        background-image: url('../../public/images/refer-select-shadow.png');
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            background-position-y: -30px;
+        }
+    }
+    
+    .rl-wp-lndng-fridge-title.mobile {
+        display: none;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+            color: #000000!important;
+        }
+    }
+
+    .rl-wp-lndng-fridge-title{
+        position: absolute;
+        left: 490px;
+        top: 170px;
+        width: 300px;
+        font-weight: 300;
+        font-size: 32px;
+        color: #6d6f71 !important;
+        opacity: 0;
+        line-height: 30px;
+        text-align: left;
+        @include Arial();
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            display: none;
+        }
+    }
+    
+    learn-more-button{
+        position: absolute;
+        left: 490px;
+        top: 325px;
+        width: 135px;
+        height: 30px;
+        opacity: 0;
+        text-transform: uppercase;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+        }
+    }
+    
+    .rl-wp-lndng-fridge{
+        left: 165px;
+        position: absolute;
+        opacity: 0;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            left: initial;
+            position: relative;
+            display: block;
+            top: 0;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .rl-wp-lndng-fridge img{
+        height: 420px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .rl-wp-lndng-fridge-desc{
+        position: absolute;
+        left: 490px;
+        top: 215px;
+        width: 300px;
+        font-size: 18.5px;
+        font-weight: 100;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-rendering: optimizeSpeed;
+        opacity: 0;
+        text-align: left;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+            margin-bottom: 30px;
+            font-size: 14px !important;
+            line-height: 18px !important;
+        }
+
+        @media screen and (max-width: 1366px) {
+           font-size: 18px;
+           line-height: 24px;
+        }
+    }
+    
+}
+
+product-selector-nav {
+    position: relative;
+    display: block;
+    top: 70px;
+    height: 300px;
+
+    .row {
+        position: relative;
+    }
+
+    @media screen and (max-width: 479px) {
+        height: 220px;
+    }
+
+    .wp-refer-landing-product,.see-all {
+        float: left;
+        width: 17.18%;
+        padding-right: 12px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .wp-refer-landing-product{
+        > img {
+            @include transition(0.2s);
+        }
+    }
+
+    .wp-refer-landing-product:not(.selected) {
+        > img {
+            opacity: 0.6;
+        }
+
+        .wp-refer-landing-button {
+            color: $selectorTextColor;
+        }
+    }
+
+    .wp-refer-landing-button {
+        @include Arial-Black();
+        margin-top: 10px;
+        height: 50px;
+        border: 2px solid $accentColor;
+        display: table;
+        width: 100%;
+        @include transition(0.2s);
+
+        p {
+            width: 100%;
+            line-height: 13px;
+            font-size: 0.8em;
+            font-weight: 400;
+            color: $accentColor;
+            @include centered-table-cell();
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            p {
+                font-size: 0.6em;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .wp-refer-landing-product:hover {
+        > img {
+            opacity: 0.75;
+        }
+
+        .wp-refer-landing-button {
+            background-color: $selectorHighlightedBackgroundColor !important;
+        }
+
+        .wp-refer-landing-button p {
+            color: $selectorHighlightedTextColor !important;
+        }
+    }
+
+    .wp-refer-landing-product.selected {
+        .wp-refer-landing-button {
+            background-color: $selectorHighlightedBackgroundColor;
+        }
+
+        .wp-refer-landing-button p {
+            color: $selectorHighlightedTextColor;
+        }
+    }
+
+    .see-all {
+        height: 226px;
+        width: 14%;
+        color: $selectorSeeAllColor;
+        text-transform: uppercase;
+        display: table;
+        padding: 0;
+        @include transition(0.2s);
+
+        &:hover {
+            background-color: $selectorHighlightedBackgroundColor;
+
+            p {
+                color: $selectorHighlightedTextColor;
+            }
+        }
+
+        div {
+            display: table;
+            width: 100%;
+            height: 100%;
+            border: 5px solid $selectorSeeAllColor;
+            font-weight: 400;
+        }
+
+        p {
+            @include centered-table-cell;
+            font-size: 1.5em;
+            line-height: 26px;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            display: initial;
+            padding: initial;
+            width: 14%;
+            height: 192px;
+
+            div {
+                margin-top: initial;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 15px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            height: 119px;
+        }
+    }
+}
+
+product-selector.fr {
+    product-slides {
+        @media screen and (max-width: 479px) {
+            margin-top: 73px;
+        }
+    }
+
+    product-selector-nav {
+        @media screen and (max-width: 479px) {
+            .wp-refer-landing-button p {
+                font-size: 0.4em;
+            }
+        }
+    }
+
+    .rl-wp-lndng-fridge-desc {
+        width: 370px;
+    }
+
+    learn-more-button {
+        width: 165px;
+
+        .learn-more-button {
+            top: 1px;
+        }
+
+        .learn-more-button p {
+            line-height: 36px;
+        }
+    }
+}
+
+.product-slide-background {
+    width: 100%;
+    height: 130px;
+    background: url(../images/refer-select-shadow.png);
+    position: absolute;
+    background-position: 0 -280px;
+    top: 310px;
+    left: -90px;
+    opacity: 0.5;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+        left: 0;
+    }
+}

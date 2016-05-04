@@ -98,10 +98,10 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                         },
                         morefeatures: {
                             enabled: true,
-                            title: "Get More From Your Refrigerator",
+                            title: "Additional Features",
                             features: [
                                 {
-                                    title: "Additional Accessories",
+                                    title: "Power Element",
                                     image: "./public/images/more-features-1.jpg",
                                     link: "http://www.maytag.ca/en_CA/Accessories-1/Accessories_Kitchen_Refrigerator-3/102290104/",
                                     alt: "test",
@@ -109,7 +109,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     cta: ""
                                 },
                                 {
-                                    title: "Water Filtration",
+                                    title: "10-Year Warranty",
                                     image: "./public/images/more-features-2.jpg",
                                     link: "http://www.maytag.ca/en_CA/2_3_80/jump-page_water-filters.content.html",
                                     alt: "test",
@@ -117,9 +117,9 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     cta: ""
                                 },
                                 {
-                                    title: "Certified Care",
+                                    title: "FIT System Guarantee",
                                     image: "./public/images/more-features-3.jpg",
-                                    link: "http://www.maytag.ca/en_CA/2_3_1/jump-page_extended-service-plans.content.html",
+                                    link: "",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -128,14 +128,14 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                         },
                         videoplayer: {
                             enabled: true,
-                            title: "Built Better",
+                            title: "Get Cooking",
                             videos: [
                                 {
-                                    id: 'Fm_-PxETMUA',
+                                    id: '14R7RmMFzf8',
                                     thumb: './public/images/video-select-2.jpg',
                                     title: 'Four-door',
                                     alt: "test",
-                                    ctaTitle: 'Four-door',
+                                    ctaTitle: 'Get Cooking',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
                                     desc: "Providing your family with fresh, healthy food is one of your strengths and Maytag's too. That's why Maytag's 4-door refrigerator sets a bold new standard for refrigeration. With advanced features and unmatched durability to keep your food chilled properly - from the first grape to the last - and when it comes to cooling, this powerful Maytag® Refrigerator is made to hold the cold​.",

@@ -23,7 +23,7 @@ import {Footer} from './landing.footer'
 
 
 @Component({
-    selector: 'rl-mt-refer-landing',
+    selector: 'rl-mt-fcr-landing',
     template: `
 	    <masthead class="{{language}}"></masthead>
 		<features class="{{language}}"></features>

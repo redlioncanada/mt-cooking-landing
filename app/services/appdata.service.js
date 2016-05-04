@@ -32,7 +32,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             image: "./public/images/refer-landing-masthead-1.jpg",
                             imageForeground: "./public/images/refer-landing-masthead-2.jpg",
                             alt: "test",
-                            title: "Refrigerators"
+                            title: "Cooking"
                         },
                         banner: {
                             enabled: true,

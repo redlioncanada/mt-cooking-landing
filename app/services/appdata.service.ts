@@ -17,7 +17,7 @@ export class AppDataService {
 				image: "./public/images/refer-landing-masthead-1.jpg",
 				imageForeground: "./public/images/refer-landing-masthead-2.jpg",
 				alt: "test",
-				title: "Refrigerators"
+				title: "Cooking"
 			},
 			banner: {
 				enabled: true,

@@ -83,7 +83,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     image: "./public/images/refer-landing-mag-glass.png",
                                     title: "Find Your Maytag",
                                     alt: "test",
-                                    desc: "Need help finding your refrigerator?",
+                                    desc: "Need help finding your appliance?",
                                     ctaText: "Click Here",
                                     ctaBackground: "./public/images/button-background.png",
                                     link: "http://findmy.maytag.ca",
@@ -128,51 +128,51 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                         },
                         videoplayer: {
                             enabled: true,
-                            title: "Get Cooking",
+                            title: "Built Better",
                             videos: [
                                 {
                                     id: '14R7RmMFzf8',
-                                    thumb: './public/images/video-select-2.jpg',
-                                    title: 'Four-door',
+                                    thumb: './public/images/video-select-1.jpg',
+                                    title: 'Maytag ® Ovens – Get Cookin’ / Maytag Man',
                                     alt: "test",
                                     ctaTitle: 'Get Cooking',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "Providing your family with fresh, healthy food is one of your strengths and Maytag's too. That's why Maytag's 4-door refrigerator sets a bold new standard for refrigeration. With advanced features and unmatched durability to keep your food chilled properly - from the first grape to the last - and when it comes to cooling, this powerful Maytag® Refrigerator is made to hold the cold​.",
+                                    desc: "Maytag® ovens take dependable cooking to another level, with another level.",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "Four-door"
+                                        label: "Get-cooking"
                                     }
                                 },
                                 {
-                                    id: 'u8rBThh8bPo',
-                                    thumb: './public/images/video-select-1.jpg',
-                                    title: 'Adjustable Temperature Refrigerated Drawer',
+                                    id: 'igvVlpAIJzc',
+                                    thumb: './public/images/video-select-2.jpg',
+                                    title: 'Maytag® Ranges - Power Pre-Heat Function',
                                     alt: "test",
-                                    ctaTitle: 'Adjustable Temperature Refrigerated Drawer',
+                                    ctaTitle: 'Power Pre-Heat',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "Maytag's Adjustable Temperature Refrigerated Drawer let's you select a precise setting and allows plenty of space for when you really want to stock up and it's full extension construction puts everything in the drawer within easy reach. It's a new storage option that gives you a flexible spot for meats and cheeses, fruits and vegetables, drinks - whatever you want! You decide, then select the setting to match. At last, a refrigerator that adjusts to your needs.",
+                                    desc: "Alternating bake and broil elements, an air circulated convection fan - there's quite a bit going on when our Power Pre-Heat Function kicks into action to heat your oven in 8 quick minutes. But all you need to know is that it gets you one step closer to dinner being done, faster than ever before.",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "Temperature Drawer"
+                                        label: "Power-Pre-Heat"
                                     }
                                 },
                                 {
-                                    id: 'OSgIUSI1ZkE',
+                                    id: 'b5npNHPD3T4',
                                     thumb: './public/images/video-select-3.jpg',
-                                    title: '10-Year Warranty',
+                                    title: 'Maytag® Ranges - EvenAir True Convection',
                                     alt: "test",
-                                    ctaTitle: '10-Year Warranty',
+                                    ctaTitle: 'EvenAir True Convection',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "At Maytag, we don't just tell you our refrigerators are made for the long haul, we're so confident in our product that we've added a 10 year limited parts warranty on select parts to back them up. Our warranty on the compressor covers the heart of the refrigerator, so you know you can count on it to hold the cold for years.",
+                                    desc: "What is Maytag® EvenAir True Convection? It's a quick heating coil. It's a fan. It's both, actually. Working in tandem to move hot air more efficiently and roast up to 30% faster than a traditional oven. Giving your perfectly consistent results, no matter what you're putting inside.",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "10-Year Warranty"
+                                        label: "EvenAir-True-Convection"
                                     }
                                 }
                             ]
@@ -185,88 +185,104 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 link: 'http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_French_Door-3/102290031/',
                                 analytics: {
                                     category: "@category",
-                                    action: "Clicked Choose Your Refer Configuration",
-                                    label: "See all Refer"
+                                    action: "Clicked Choose Your Cooking Configuration",
+                                    label: "See all Cooking"
                                 }
                             },
                             products: [
                                 {
-                                    image: "./public/images/products/four-door.png",
-                                    title: "Four-door",
+                                    image: "./public/images/products/front_control.png",
+                                    title: "Front Control Ranges",
                                     alt: "test",
                                     desc: "There’s getting organized, and then there’s getting organized your way. Thanks to the adjustable-temperature refrigerated drawer and EasySlide bin, you can store everything you need exactly the way you want to. Plus, the 4-door fridge’s premium design will keep it looking great on the outside, too.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Top_Freezer-3/102290031+112290217/",
-                                    id: "four-door",
+                                    link: "http://www.maytag.ca/en_CA/kitchen-1/cooking-2/ranges-3/-[YMES8880DS]-5511597/YMES8880DS/",
+                                    id: "fcr",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Choose Your Refer Configuration",
-                                        label: "Four-door",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Front Control Ranges",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/french-door.png",
-                                    title: "French Door",
+                                    image: "./public/images/products/rear_control.png",
+                                    title: "Rear Control Ranges",
                                     alt: "test",
                                     desc: "More capacity. More ways to stay organized. French Door fridges are made with convenience in mind. That means keeping your fresh foods at eye level and easily storing your frozen favourites. Plus, it’s built to look great in any kitchen.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_French_Door-3/102290031+4294966906/",
-                                    id: "french-door",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012/",
+                                    id: "rcr",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Choose Your Refer Configuration",
-                                        label: "French Door",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Rear-Control",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/side-by-side.png",
-                                    title: "Side-by-Side",
+                                    image: "./public/images/products/double_oven.png",
+                                    title: "Double Oven Ranges",
                                     alt: "test",
                                     desc: "Classic style? Check. Fits your space? You bet. More door bin space means you can easily store and access food items. Plus it’s built to store more of whatever you need, whether that’s fresh or frozen foods. And yes, a range of different sizes are available.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_SidebySide-3/102290031+4294967038/",
-                                    id: "side-by-side",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012/",
+                                    id: "dbl-oven",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Choose Your Refer Configuration",
-                                        label: "Side-by-side",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "double-oven",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/bottom-freezer.png",
-                                    title: "Bottom-Freezer",
+                                    image: "./public/images/products/wall_oven.png",
+                                    title: "Wall Ovens",
                                     alt: "test",
                                     desc: "Getting to your fresh food items doesn’t get easier than this. You can count on bottom-freezer refrigerators to keep everything you need at eye-level, so you won’t have to go searching when you’re in a hurry. How’s that for convenience?",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Bottom_Freezer-3/102290031+4294967048/",
-                                    id: "bottom-freezer",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Wall_Ovens-3/102290015/",
+                                    id: "wall-ovens",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Choose Your Refer Configuration",
-                                        label: "Bottom-Freezer",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "wall-ovens",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/top-freezer.png",
-                                    title: "Top-Freezer",
+                                    image: "./public/images/products/cooktop.png",
+                                    title: "Cooktops",
                                     alt: "test",
                                     desc: "Quality, meet value. With a top-freezer refrigerator, there’s always a place to store fresh and frozen foods. Plus, they’re available in smaller sizes, so you can use a second one when you need the extra space. You’re right, that is a good idea.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Top_Freezer-3/102290031+4294967059/",
-                                    id: "top-freezer",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Cooktops-3/102290019/",
+                                    id: "cooktops",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Choose Your Refer Configuration",
-                                        label: "Top-Freezer",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "cooktops",
+                                        learnMore: 'Learn More'
+                                    }
+                                },
+                                {
+                                    image: "./public/images/products/microwave.png",
+                                    title: "Microwaves",
+                                    alt: "test",
+                                    desc: "Quality, meet value. With a top-freezer refrigerator, there’s always a place to store fresh and frozen foods. Plus, they’re available in smaller sizes, so you can use a second one when you need the extra space. You’re right, that is a good idea.",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Microwaves-3/102290026/",
+                                    id: "microwaves",
+                                    ctaText: "Learn More",
+                                    ctaBackground: "./public/images/button-background.png",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "microwaves",
                                         learnMore: 'Learn More'
                                     }
                                 }

@@ -1,7 +1,7 @@
 videoplayer {
 	> h2 {
 		@include header-text;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-bottom: 20px;
          @media screen and (max-width: $mobileBreakpoint) {
          	margin-top: 10px;

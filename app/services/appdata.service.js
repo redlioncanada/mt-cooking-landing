@@ -133,9 +133,9 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     id: '14R7RmMFzf8',
                                     thumb: './public/images/video-select-1.jpg',
-                                    title: 'Maytag<sup>&reg;</sup> Ovens – Get Cookin’ / Maytag Man',
+                                    title: 'Maytag&reg; Ovens – Get Cookin’ / Maytag Man',
                                     alt: "test",
-                                    ctaTitle: 'Maytag<sup>&reg;</sup> Man',
+                                    ctaTitle: 'Maytag&reg; Man',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
                                     desc: "Maytag® ovens take dependable cooking to another level, with another level.",
@@ -148,7 +148,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     id: 'igvVlpAIJzc',
                                     thumb: './public/images/video-select-2.jpg',
-                                    title: 'Maytag<sup>&reg;</sup> Ranges - Power Pre-Heat Function',
+                                    title: 'Maytag&reg; Ranges - Power Pre-Heat Function',
                                     alt: "test",
                                     ctaTitle: 'Power Pre-Heat',
                                     ctaText: 'Watch Video',
@@ -163,7 +163,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     id: 'b5npNHPD3T4',
                                     thumb: './public/images/video-select-3.jpg',
-                                    title: 'Maytag<sup>&reg;</sup> Ranges - EvenAir True Convection',
+                                    title: 'Maytag&reg; Ranges - EvenAir True Convection',
                                     alt: "test",
                                     ctaTitle: 'EvenAir True Convection',
                                     ctaText: 'Watch Video',

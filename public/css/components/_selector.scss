@@ -32,7 +32,7 @@ product-selector {
         width: 100%;
 
         @media screen and (max-width: 479px) {
-            margin-top: 40px;
+            margin-top: 25px;
         }
     }
     .wp-refer-landing-product-slide{
@@ -179,14 +179,18 @@ product-selector-nav {
     position: relative;
     display: block;
     top: 0px;
-    height: 300px;
+    height: 275px;
 
     .row {
         position: relative;
     }
-
+    
+    @media screen and (max-width: $mobileBreakpoint) {
+        height: 225px;
+    }
+    
     @media screen and (max-width: 479px) {
-        height: 220px;
+        height: 150px;
     }
 
     .wp-refer-landing-product,.see-all {
@@ -239,6 +243,12 @@ product-selector-nav {
             p {
                 font-size: 0.6em;
                 font-weight: 200;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            p {
+                font-size: 0.4em;
+                font-weight: 100;
             }
         }
     }

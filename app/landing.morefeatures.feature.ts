@@ -17,7 +17,7 @@ declare var $: JQueryStatic;
 					<img src="{{image}}" alt="{{alt}}"/>
 				</div>
 			</div>
-			<p class="bottom-text">{{title}}</p>
+			<p class="bottom-text" [innerHTML]="title"></p>
 		</div></a>
     `
 })

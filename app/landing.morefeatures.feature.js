@@ -52,7 +52,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 MoreFeaturesFeature = __decorate([
                     core_1.Component({
                         selector: 'more-features-feature',
-                        template: "\n    \t<a href=\"{{link}}\" target=\"_blank\"><div>\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\">\n\t\t\t\t\t<!-- <div class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\">{{text}}</p>\n\t\t\t\t\t\t\t<p class=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div> -->\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\">{{title}}</p>\n\t\t</div></a>\n    "
+                        template: "\n    \t<a href=\"{{link}}\" target=\"_blank\"><div>\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\">\n\t\t\t\t\t<!-- <div class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\">{{text}}</p>\n\t\t\t\t\t\t\t<p class=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div> -->\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\" [innerHTML]=\"title\"></p>\n\t\t</div></a>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MoreFeaturesFeature);

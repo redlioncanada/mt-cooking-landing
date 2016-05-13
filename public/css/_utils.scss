@@ -9,3 +9,7 @@
 .selected {
 	cursor: default;
 }
+
+.no-link, .no-link * {
+	cursor: default !important;
+}

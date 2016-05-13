@@ -71,7 +71,7 @@ rl-mt-fcr-landing {
     font-size: 75%;
     line-height: 0;
     position: relative;
-    vertical-align: baseline; }
+    vertical-align: baseline !important; }
   rl-mt-fcr-landing sup {
     top: -0.5em; }
   rl-mt-fcr-landing sub {
@@ -82,6 +82,8 @@ rl-mt-fcr-landing {
     display: block; }
   rl-mt-fcr-landing .selected {
     cursor: default; }
+  rl-mt-fcr-landing .no-link, rl-mt-fcr-landing .no-link * {
+    cursor: default !important; }
   rl-mt-fcr-landing header {
     font-family: Helvetica, Arial, sans-serif;
     overflow: hidden; }

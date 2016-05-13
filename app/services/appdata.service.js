@@ -101,9 +101,9 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             title: "Additional Features",
                             features: [
                                 {
-                                    title: "Power Element",
+                                    title: "Power<sup>&trade;</sup> Burner",
                                     image: "./public/images/more-features-1.jpg",
-                                    link: "http://www.maytag.ca/en_CA/Accessories-1/Accessories_Kitchen_Refrigerator-3/102290104/",
+                                    link: "",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -111,7 +111,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     title: "10-Year Warranty",
                                     image: "./public/images/more-features-2.jpg",
-                                    link: "http://www.maytag.ca/en_CA/2_3_80/jump-page_water-filters.content.html",
+                                    link: "http://www.maytag.ca/en_CA/2_3_147/jump-page_ten-year-warranty.content.html",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -119,7 +119,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     title: "FIT System Guarantee",
                                     image: "./public/images/more-features-3.jpg",
-                                    link: "",
+                                    link: "http://www.maytag.ca/other-assets/en_CA/pdf/FIT_Wall%20Oven_Guarantee_MTG_CANADA_2016_FINAL.pdf",
                                     alt: "test",
                                     text: "",
                                     cta: ""

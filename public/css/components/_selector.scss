@@ -20,6 +20,7 @@ product-selector {
 
         @media screen and (max-width: 479px) {
             height: 20px;
+            line-height: normal;
         }
     }
     
@@ -342,7 +343,7 @@ product-selector.fr {
     product-selector-nav {
         @media screen and (max-width: 479px) {
             .wp-refer-landing-button p {
-                font-size: 0.4em;
+                font-size: 0.3em;
             }
         }
     }

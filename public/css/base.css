@@ -799,7 +799,8 @@ rl-mt-fcr-landing {
           margin-bottom: 0px; } }
       @media screen and (max-width: 479px) {
         rl-mt-fcr-landing product-selector h2 {
-          height: 20px; } }
+          height: 20px;
+          line-height: normal; } }
     rl-mt-fcr-landing product-selector #french-door, rl-mt-fcr-landing product-selector #side-by-side, rl-mt-fcr-landing product-selector #bottom-freezer, rl-mt-fcr-landing product-selector #under-counter, rl-mt-fcr-landing product-selector #built-in {
       opacity: 0; }
     rl-mt-fcr-landing product-selector product-slides {
@@ -1047,7 +1048,7 @@ rl-mt-fcr-landing {
       margin-top: 73px; } }
   @media screen and (max-width: 479px) {
     rl-mt-fcr-landing product-selector.fr product-selector-nav .wp-refer-landing-button p {
-      font-size: 0.4em; } }
+      font-size: 0.3em; } }
   rl-mt-fcr-landing product-selector.fr .rl-wp-lndng-fridge-desc {
     width: 370px; }
   rl-mt-fcr-landing product-selector.fr learn-more-button {

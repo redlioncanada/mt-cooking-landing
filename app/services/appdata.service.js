@@ -212,7 +212,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/rear_control-sml.png",
                                     title: "Rear Control Ranges",
                                     alt: "Rear Control Ranges",
-                                    desc: "Rear Control Ranges can be found across all price points and offer ample flexibility in terms of style. With a back panel and standard rear controls, it is sure to fit between cabinets/countertops, or sit steadfast at the end of a run.",
+                                    desc: "Rear Control Ranges can be found across all price points and offer ample flexibility in terms of style. With a back panel and standard rear controls, it is sure to fit between cabinets / countertops, or sit steadfast at the end of a run.",
                                     link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012/",
                                     id: "rcr",
                                     ctaText: "Learn More",

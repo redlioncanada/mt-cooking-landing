@@ -33,7 +33,7 @@ product-selector {
         width: 100%;
 
         @media screen and (max-width: 479px) {
-            margin-top: 25px;
+            margin-top: 75px;
         }
     }
     .wp-refer-landing-product-slide{
@@ -48,7 +48,7 @@ product-selector {
 
         @media screen and (max-width: $mobileBreakpoint) {
             position: absolute;
-            height: initial;
+            height: 500px;
             top: initial;
             width: 100%;
             left: 0;
@@ -191,7 +191,7 @@ product-selector-nav {
     }
     
     @media screen and (max-width: 479px) {
-        height: 150px;
+        height: 350px;
     }
 
     .wp-refer-landing-product,.see-all {
@@ -199,6 +199,10 @@ product-selector-nav {
         width: 16.6%;
         padding-right: 6px;
         padding-left: 6px;
+
+        @media screen and (max-width: 479px) {
+         width: 33%;
+        }
 
         img {
             width: 100%;

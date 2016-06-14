@@ -6,8 +6,9 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             ProductModel = (function () {
-                function ProductModel(prodImage, prodName, prodDescription, prodUrl, prodId, ctaText, prodAlt, ctaBackground, analytics) {
+                function ProductModel(prodImage, prodThumb, prodName, prodDescription, prodUrl, prodId, ctaText, prodAlt, ctaBackground, analytics) {
                     if (prodImage === void 0) { prodImage = ""; }
+                    if (prodThumb === void 0) { prodThumb = ""; }
                     if (prodName === void 0) { prodName = ""; }
                     if (prodDescription === void 0) { prodDescription = ""; }
                     if (prodUrl === void 0) { prodUrl = ""; }
@@ -17,6 +18,7 @@ System.register([], function(exports_1, context_1) {
                     if (ctaBackground === void 0) { ctaBackground = ""; }
                     if (analytics === void 0) { analytics = {}; }
                     this.prodImage = prodImage;
+                    this.prodThumb = prodThumb;
                     this.prodName = prodName;
                     this.prodDescription = prodDescription;
                     this.prodUrl = prodUrl;

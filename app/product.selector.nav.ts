@@ -9,7 +9,7 @@ import {AnalyticsServiceOn} from './analytics.directive'
     template: `
     	<div class="row {{!enabled ? 'hide' : ''}}">
 			<div class="wp-refer-landing-product {{selectedProduct.prodId == product.prodId ? 'selected' : ''}}" *ngFor="#product of products; #i = index" analyticsOn="click" analyticsCategory="{{product.analytics.category}}" analyticsAction="{{product.analytics.action}}" analyticsLabel="{{product.analytics.label}}" (click)="select(product)">
-				<img src="{{product.prodImage}}"/>
+				<img src="{{product.prodThumb}}"/>
 				<div class="wp-refer-landing-button">
 					<p [innerHtml]="product.prodName"></p>
 				</div>

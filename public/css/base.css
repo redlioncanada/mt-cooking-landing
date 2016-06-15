@@ -945,7 +945,7 @@ rl-mt-fcr-landing {
         height: 225px; } }
     @media screen and (max-width: 479px) {
       rl-mt-fcr-landing product-selector-nav {
-        height: 350px; } }
+        height: 400px; } }
     rl-mt-fcr-landing product-selector-nav .wp-refer-landing-product, rl-mt-fcr-landing product-selector-nav .see-all {
       float: left;
       width: 16.6%;

@@ -36,6 +36,7 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                     this.logger = logger;
                     this.breakpoint = breakpoint;
                     this.isAnimating = new core_1.EventEmitter();
+                    this.init = false;
                     this.elementRef = elementRef;
                     this.animating = false;
                     this.imageTop = 155;
@@ -90,6 +91,7 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                     TweenMax.to(desc, .5, { delay: 0, opacity: 0, ease: Power3.easeOut });
                     TweenMax.to(learn, .2, { delay: 0, opacity: 0, ease: Power3.easeOut, onComplete: function () {
                             TweenMax.to(target, 0, { delay: 0, opacity: 0 });
+                            target.css('display', 'none');
                             cb();
                         } });
                 };
@@ -98,33 +100,27 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                     if (!self)
                         self = this;
                     target = $(self.rootElement).find('#' + target);
+                    target.css('display', 'inline-block');
                     $(self.rootElement).find('product-slide').css('zIndex', 1);
                     $(target).parent().css('zIndex', 2);
+                    $('product-slides').css('height', $('.selected').css('height'));
+                    if (self.init)
+                        $('html,body').animate({
+                            scrollTop: $('product-slides').offset().top
+                        });
                     var image = ($(target).find('.rl-wp-lndng-fridge'));
                     var title = ($(target).find('.rl-wp-lndng-fridge-title'));
                     var desc = ($(target).find('.rl-wp-lndng-fridge-desc'));
                     var learn = ($(target).find('learn-more-button'));
                     var isMobile = this.breakpoint.is('tablet') || this.breakpoint.is('mobile');
-                    if (isMobile) {
-                        TweenMax.to(image, 0, { delay: 0, top: 0 });
-                        TweenMax.to(title, 0, { delay: 0, top: 0 });
-                        TweenMax.to(desc, 0, { delay: 0, top: 0 });
-                        TweenMax.to(learn, 0, { delay: 0, top: 0 });
-                    }
-                    else {
-                        TweenMax.to(image, 0, { delay: 0, top: this.imageTop });
-                        TweenMax.to(title, 0, { delay: 0, top: this.titleTop });
-                        TweenMax.to(desc, 0, { delay: 0, top: this.descTop });
-                        TweenMax.to(learn, 0, { delay: 0, top: this.learnTop });
-                    }
                     TweenMax.to(target, 0, { delay: 0.1, opacity: 1 });
                     if (delay) {
                         if (isMobile) {
                             TweenMax.to(image, 1.5, { delay: .6, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(title, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
-                            TweenMax.to(desc, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
+                            TweenMax.to(desc, 1.5, { delay: 1.2, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(learn, 1.5, {
-                                delay: .9, opacity: 1, ease: Power1.easeOut, onComplete: function () {
+                                delay: 1.2, opacity: 1, ease: Power1.easeOut, onComplete: function () {
                                     self.animating = false;
                                 }
                             });
@@ -132,9 +128,9 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                         else {
                             TweenMax.to(image, 1.5, { delay: .6, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(title, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
-                            TweenMax.to(desc, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
+                            TweenMax.to(desc, 1.5, { delay: 1.2, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(learn, 1.5, {
-                                delay: .9, opacity: 1, ease: Power1.easeOut, onComplete: function () {
+                                delay: 1.2, opacity: 1, ease: Power1.easeOut, onComplete: function () {
                                     self.animating = false;
                                 }
                             });
@@ -144,9 +140,9 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                         if (isMobile) {
                             TweenMax.to(image, 1.5, { delay: .5, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(title, 1.5, { delay: 0.7, opacity: 1, ease: Power1.easeOut });
-                            TweenMax.to(desc, 1.5, { delay: 0.7, opacity: 1, ease: Power1.easeOut });
+                            TweenMax.to(desc, 1.5, { delay: 0.9, opacity: 1, ease: Power1.easeOut });
                             TweenMax.to(learn, 1.5, {
-                                delay: 0.7, opacity: 1, ease: Power1.easeOut, onComplete: function () {
+                                delay: 0.9, opacity: 1, ease: Power1.easeOut, onComplete: function () {
                                     self.animating = false;
                                 }
                             });
@@ -161,6 +157,7 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                                 }
                             });
                         }
+                        self.init = true;
                     }
                 };
                 __decorate([

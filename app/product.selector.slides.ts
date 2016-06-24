@@ -32,6 +32,8 @@ export class ProductSlides {
     private descTop
     private learnTop
 
+    private init:boolean = false
+
     set animating(a:boolean) {
         if (this._animating != a) {
             this._animating = a
@@ -94,6 +96,7 @@ export class ProductSlides {
           TweenMax.to(desc, .5, { delay: 0, opacity: 0, ease: Power3.easeOut });
           TweenMax.to(learn, .2, { delay: 0, opacity: 0, ease: Power3.easeOut, onComplete: function() {
               TweenMax.to(target, 0, { delay: 0, opacity: 0 });
+              target.css('display', 'none');
               cb()
           }});
       }
@@ -102,8 +105,14 @@ export class ProductSlides {
         if (!self) self = this
         target = $(self.rootElement).find('#' + target)
 
+        target.css('display', 'inline-block');
         $(self.rootElement).find('product-slide').css('zIndex', 1)
         $(target).parent().css('zIndex', 2)
+        $('product-slides').css('height', $('.selected').css('height'));
+
+        if (self.init) $('html,body').animate({
+          scrollTop: $('product-slides').offset().top
+        })
 
         var image = ($(target).find('.rl-wp-lndng-fridge'))
         var title = ($(target).find('.rl-wp-lndng-fridge-title'))
@@ -112,35 +121,24 @@ export class ProductSlides {
 
         var isMobile = this.breakpoint.is('tablet') || this.breakpoint.is('mobile')
 
-        if (isMobile) {
-          TweenMax.to(image, 0, { delay: 0, top: 0 });
-          TweenMax.to(title, 0, { delay: 0, top: 0 });
-          TweenMax.to(desc, 0, { delay: 0, top: 0 });
-          TweenMax.to(learn, 0, { delay: 0, top: 0 });
-        } else {
-          TweenMax.to(image, 0, { delay: 0, top: this.imageTop });
-          TweenMax.to(title, 0, { delay: 0, top: this.titleTop });
-          TweenMax.to(desc, 0, { delay: 0, top: this.descTop });
-          TweenMax.to(learn, 0, { delay: 0, top: this.learnTop });
-        }
         TweenMax.to(target, 0, { delay: 0.1, opacity: 1 });
 
         if (delay) {
           if (isMobile) {
             TweenMax.to(image, 1.5, { delay: .6, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(title, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
-            TweenMax.to(desc, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
+            TweenMax.to(desc, 1.5, { delay: 1.2, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(learn, 1.5, {
-              delay: .9, opacity: 1, ease: Power1.easeOut, onComplete: function() {
+              delay: 1.2, opacity: 1, ease: Power1.easeOut, onComplete: function() {
                 self.animating = false;
               }
             });
           } else {
             TweenMax.to(image, 1.5, { delay: .6, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(title, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
-            TweenMax.to(desc, 1.5, { delay: .9, opacity: 1, ease: Power1.easeOut });
+            TweenMax.to(desc, 1.5, { delay: 1.2, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(learn, 1.5, {
-              delay: .9, opacity: 1, ease: Power1.easeOut, onComplete: function() {
+              delay: 1.2, opacity: 1, ease: Power1.easeOut, onComplete: function() {
                 self.animating = false;
               }
             });
@@ -149,9 +147,9 @@ export class ProductSlides {
           if (isMobile) {
             TweenMax.to(image, 1.5, { delay: .5, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(title, 1.5, { delay: 0.7, opacity: 1, ease: Power1.easeOut });
-            TweenMax.to(desc, 1.5, { delay: 0.7, opacity: 1, ease: Power1.easeOut });
+            TweenMax.to(desc, 1.5, { delay: 0.9, opacity: 1, ease: Power1.easeOut });
             TweenMax.to(learn, 1.5, {
-              delay: 0.7, opacity: 1, ease: Power1.easeOut, onComplete: function() {
+              delay: 0.9, opacity: 1, ease: Power1.easeOut, onComplete: function() {
                 self.animating = false;
               }
             });
@@ -165,6 +163,7 @@ export class ProductSlides {
               }
             });
           }
+          self.init = true
         }
       }
 }

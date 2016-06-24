@@ -56,11 +56,11 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     desc: "What to look for when buying",
                                     ctaText: "Click Here",
                                     ctaBackground: "./public/images/button-background.png",
-                                    link: "https://www.google.ca/#q=placeholder",
+                                    link: "/other-assets/en_CA/pdf/MT_Cooking_Buying_Guide.pdf",
                                     type: "cart",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Buying Guide"
                                     }
                                 },
@@ -75,7 +75,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     type: "star",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Ratings and Reviews"
                                     }
                                 },
@@ -90,7 +90,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     type: "magnifier",
                                     analytics: {
                                         category: "@category",
-                                        action: "Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Find Your MT"
                                     }
                                 }
@@ -106,7 +106,12 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     link: "",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "Power Burner"
+                                    }
                                 },
                                 {
                                     title: "10-Year Warranty",
@@ -114,7 +119,12 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     link: "http://www.maytag.ca/en_CA/2_3_147/jump-page_ten-year-warranty.content.html",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "10-Year Warranty"
+                                    }
                                 },
                                 {
                                     title: "FIT System Guarantee",
@@ -122,7 +132,12 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     link: "http://www.maytag.ca/other-assets/en_CA/pdf/FIT_Wall%20Oven_Guarantee_MTG_CANADA_2016_FINAL.pdf",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "FIT System"
+                                    }
                                 }
                             ]
                         },
@@ -133,16 +148,16 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     id: '14R7RmMFzf8',
                                     thumb: './public/images/video-select-1.jpg',
-                                    title: 'Maytag&reg; Ovens – Get Cookin’ / Maytag Man',
+                                    title: 'Maytag<sup>&reg;</sup> Ovens – Get Cookin’ / Maytag Man',
                                     alt: "test",
-                                    ctaTitle: 'Maytag&reg; Man',
+                                    ctaTitle: 'Maytag<sup>&reg;</sup> Man',
                                     ctaText: 'Watch Video',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "Maytag® ovens take dependable cooking to another level, with another level.",
+                                    desc: "Maytag<sup>&reg;</sup> ovens take dependable cooking to another level, with another level.",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "Get-cooking"
+                                        label: "Maytag Man Video"
                                     }
                                 },
                                 {
@@ -157,7 +172,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "Power-Pre-Heat"
+                                        label: "Power Pre-Heat Video"
                                     }
                                 },
                                 {
@@ -172,7 +187,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Built Better",
-                                        label: "EvenAir-True-Convection"
+                                        label: "Evenair Video"
                                     }
                                 }
                             ]
@@ -203,7 +218,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "Front Control Ranges",
+                                        label: "Front Control",
                                         learnMore: 'Learn More'
                                     }
                                 },
@@ -213,14 +228,14 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     title: "Rear Control Ranges",
                                     alt: "Rear Control Ranges",
                                     desc: "Rear Control Ranges can be found across all price points and offer ample flexibility in terms of style. With a back panel and standard rear controls, it is sure to fit between cabinets / countertops, or sit steadfast at the end of a run.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012/",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012+10000150/",
                                     id: "rcr",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "Rear-Control",
+                                        label: "Rear Control",
                                         learnMore: 'Learn More'
                                     }
                                 },
@@ -230,14 +245,14 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     title: "Double Oven Ranges",
                                     alt: "Double Oven Ranges",
                                     desc: "Double Ovens come in several sizes and configurations; the smaller oven is tried and true when it comes to every day cooking and the larger oven is always willing to lend a helping hand for a holiday feast. No matter which configuration you choose, you’re guaranteed to be able to take care of meals of any size.",
-                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012/",
+                                    link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012+10000151/",
                                     id: "dbl-oven",
                                     ctaText: "Learn More",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "double-oven",
+                                        label: "Double Oven",
                                         learnMore: 'Learn More'
                                     }
                                 },
@@ -254,7 +269,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "wall-ovens",
+                                        label: "Wall Ovens",
                                         learnMore: 'Learn More'
                                     }
                                 },
@@ -263,7 +278,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/cooktop-sml.png",
                                     title: "Cooktops",
                                     alt: "Cooktops",
-                                    desc: "Quality, meet value. With a top-freezer refrigerator, there’s always a place to store fresh and frozen foods. Plus, they’re available in smaller sizes, so you can use a second one when you need the extra space. You’re right, that is a good idea.",
+                                    desc: "Cooktops offer a flat and sleek surface for all of your cooking needs; boiling, simmering and frying. The technology choices are the same whether you’re looking at a range cooktop or a built-in, designed to keep your kitchen looking great while delivering powerful results.",
                                     link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Cooktops-3/102290019/",
                                     id: "cooktops",
                                     ctaText: "Learn More",
@@ -271,7 +286,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "cooktops",
+                                        label: "Cooktops",
                                         learnMore: 'Learn More'
                                     }
                                 },
@@ -280,7 +295,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/microwave-sml.png",
                                     title: "Microwaves",
                                     alt: "Microwaves",
-                                    desc: "Cooktops offer a flat and sleek surface for all of your cooking needs; boiling, simmering and frying. The technology choices are the same whether you’re looking at a range cooktop or a built-in, designed to keep your kitchen looking great while delivering powerful results.",
+                                    desc: "No matter if it’s a range or a cooktop, microwave models are installed above your cooking area with a powerful built-in hood fan. Enhanced features are available; such as convection microwaves which use an interior fan and separate heating element to evenly circulate hot air.",
                                     link: "http://www.maytag.ca/en_CA/Kitchen-1/Kitchen_Cooking_Microwaves-3/102290026/",
                                     id: "microwaves",
                                     ctaText: "Learn More",
@@ -288,7 +303,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     analytics: {
                                         category: "@category",
                                         action: "Clicked Choose Your Cooking Configuration",
-                                        label: "microwaves",
+                                        label: "Microwaves",
                                         learnMore: 'Learn More'
                                     }
                                 }
@@ -301,7 +316,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             image: "./public/images/refer-landing-masthead-1-fr.jpg",
                             imageForeground: "./public/images/refer-landing-masthead-2-fr.jpg",
                             alt: "test",
-                            title: "Réfrigérateurs"
+                            title: "Cuisine"
                         },
                         banner: {
                             enabled: true,
@@ -311,7 +326,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             ctaBackground: './public/images/button-background.png',
                             analytics: {
                                 category: "@category",
-                                action: "@language-Clicked Footer Banner",
+                                action: "Clicked Footer Banner",
                                 label: "May-Is-Maytag-Learn-More"
                             }
                         },
@@ -325,11 +340,11 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     desc: "Éléments à considérer lorsque vous magasinez",
                                     ctaText: "Cliquez ici",
                                     ctaBackground: "./public/images/button-background.png",
-                                    link: "https://www.google.ca/#q=placeholder",
+                                    link: "#",
                                     type: "cart",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Buying Guide"
                                     }
                                 },
@@ -344,7 +359,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     type: "star",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Ratings and Reviews"
                                     }
                                 },
@@ -352,14 +367,14 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     image: "./public/images/refer-landing-mag-glass.png",
                                     title: "Trouvez Votre Électroménager Maytag",
                                     alt: "test",
-                                    desc: "Vous avez besoin d'aide pour trouver un réfrigérateur?",
+                                    desc: "Vous avez besoin d'aide pour trouver un cuisinière?",
                                     ctaText: "Cliquez ici",
                                     ctaBackground: "./public/images/button-background.png",
                                     link: "http://trouvermon.maytag.ca",
                                     type: "magnifier",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Refer Resources",
+                                        action: "Clicked Cooking Resources",
                                         label: "Find Your MT"
                                     }
                                 }
@@ -367,81 +382,96 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                         },
                         morefeatures: {
                             enabled: true,
-                            title: "Tirez Le Meilleur Parti de Votre Réfrigérateur",
+                            title: "Caractéristiques Additionnelles",
                             features: [
                                 {
-                                    title: "Accessoires",
+                                    title: "Brûleur Power<sup>&trade;</sup>",
                                     image: "./public/images/more-features-1.jpg",
-                                    link: "http://www.maytag.ca/fr_CA/Accessories-1/Accessories_Kitchen_Refrigerator-3/102290104/",
+                                    link: "",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "Power Burner"
+                                    }
                                 },
                                 {
-                                    title: "Filtration D'eau",
+                                    title: "Garantie de 10 Ans",
                                     image: "./public/images/more-features-2.jpg",
-                                    link: "http://www.maytag.ca/fr_CA/2_3_80/jump-page_water-filters.content.html",
+                                    link: "http://www.maytag.ca/fr_CA/2_3_147/jump-page_ten-year-warranty.content.html",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "10-Year Warranty"
+                                    }
                                 },
                                 {
-                                    title: "Entretien autorisé",
+                                    title: "FIT System Guarantee(fr)",
                                     image: "./public/images/more-features-3.jpg",
-                                    link: "http://www.maytag.ca/fr_CA/2_3_1/jump-page_extended-service-plans.content.html",
+                                    link: "http://www.maytag.ca/other-assets/fr_CA/pdf/FIT_Wall%20Oven_Guarantee_MTG_CANADA_2016_FINAL.pdf",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Additional Features",
+                                        label: "FIT System"
+                                    }
                                 }
                             ]
                         },
                         videoplayer: {
                             enabled: true,
-                            title: "Mieux Construit",
+                            title: "Built Better(fr)",
                             videos: [
                                 {
-                                    image: './public/images/video-image-1.jpg',
-                                    thumb: './public/images/video-select-2.jpg',
-                                    title: 'Quatre Portes',
-                                    alt: "test",
-                                    ctaTitle: 'Quatre Portes',
-                                    ctaText: 'Voir',
-                                    ctaBackground: "./public/images/button-background.png",
-                                    desc: "Offrir à votre famille des aliments frais et sains est l'un de vos points forts et celui de Maytag également. C'est pourquoi, le réfrigérateur à 4 portes de Maytag établit une nouvelle norme encore plus élevée pour la réfrigération. Des caractéristiques perfectionnées et une durabilité sans égal conserveront vos aliments à la bonne température, du premier au dernier raisin; et vous pourrez compter sur ce puissant modèle Maytag® pour assurer le maintien du froid.",
-                                    analytics: {
-                                        category: "@category",
-                                        action: "@language-Clicked Built Better",
-                                        label: "Four-door"
-                                    }
-                                },
-                                {
-                                    image: './public/images/video-image-2.jpg',
+                                    id: '14R7RmMFzf8',
                                     thumb: './public/images/video-select-1.jpg',
-                                    title: 'Tiroir Réfrigéré à Température Réglable',
+                                    title: 'Fours Maytag<sup>&reg;</sup> – mettez-vous aux fourneaux / monsieur Maytag<sup>&reg;</sup>',
                                     alt: "test",
-                                    ctaTitle: 'Tiroir Réfrigéré à Température Réglable',
+                                    ctaTitle: 'Monsieur Maytag<sup>&reg;</sup>',
                                     ctaText: 'Voir',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "Le tiroir réfrigéré à température réglable Maytag vous permet de choisir un réglage précis et procure amplement d'espace lorsque vous souhaitez faire des provisions. Sa conception à pleine extension permet un accès facile à tous les articles qui y sont rangés. C'est une nouvelle option de rangement qui vous offre un endroit supplémentaire pour les viandes, fromages, fruits, légumes et tout ce que vous voulez! Vous décidez, puis vous choisissez le réglage correspondant. Enfin un réfrigérateur qui s'adapte à vos besoins!",
+                                    desc: "Grâce aux fours doubles Maytag®, la cuisson est élevée à un degré supérieur, sur deux niveaux.",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Built Better",
-                                        label: "Temperature Drawer"
+                                        action: "Clicked Built Better",
+                                        label: "Maytag Man Video"
                                     }
                                 },
                                 {
-                                    image: './public/images/video-image-3.jpg',
-                                    thumb: './public/images/video-select-3-fr.jpg',
-                                    title: 'Garantie limitée de 10 ans',
+                                    id: 'igvVlpAIJzc',
+                                    thumb: './public/images/video-select-2.jpg',
+                                    title: 'Cuisinières Maytag<sup>&reg;</sup> – fonction de préchauffage rapide power preheat',
                                     alt: "test",
-                                    ctaTitle: 'Garantie limitée de 10 ans',
+                                    ctaTitle: 'Préchauffage Rapide',
                                     ctaText: 'Voir',
                                     ctaBackground: "./public/images/button-background.png",
-                                    desc: "Chez Maytag, nous ne nous contentons pas de vous dire que nos réfrigérateurs durent longtemps, nous sommes en effet tellement confiants en nos produits que nous avons ajouté une garantie limitée de 10 ans sur certaines pièces. Notre garantie sur les pièces du compresseur couvre la pièce maîtresse du réfrigérateur. Vous pouvez donc compter sur votre modèle pour maintenir le froid pendant des années.",
+                                    desc: "La fonction de préchauffage rapide Power Preheat qui se met en marche pour préchauffer votre four en 8 petites minutes utilise en alternance l'élément de cuisson et l'élément de grillage tout en faisant circuler l'air à l'aide du ventilateur de convection. Tout ce que vous avez besoin de savoir, c'est que cette fonction vous permet d'avoir votre souper prêt en une étape de moins, plus rapidement que jamais.",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Built Better",
-                                        label: "10-Year Warranty"
+                                        action: "Clicked Built Better",
+                                        label: "Power Pre-Heat Video"
+                                    }
+                                },
+                                {
+                                    id: 'b5npNHPD3T4',
+                                    thumb: './public/images/video-select-3.jpg',
+                                    title: 'Cuisinières Maytag<sup>&reg;</sup>  – convection véritable evenair',
+                                    alt: "test",
+                                    ctaTitle: 'Convection véritable EvenAir<sup>&trade;</sup>',
+                                    ctaText: 'Voir',
+                                    ctaBackground: "./public/images/button-background.png",
+                                    desc: "Qu'est-ce que la convection véritable EvenAir Maytag®? C'est un serpentin à chauffage rapide et un ventilateur qui travaillent ensemble pour faire circuler l'air chaud efficacement et rôtir 30 % plus rapidement qu'un four conventionnel. La convection véritable vous procure des résultats optimaux, peu importe ce que vous cuisez.",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Built Better",
+                                        label: "Evenair Video"
                                     }
                                 }
                             ]
@@ -451,91 +481,113 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             title: 'Choisissez Votre Configuration',
                             nav: {
                                 text: 'Voir<br/>Tout',
-                                link: 'http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_French_Door-3/102290031/',
+                                link: '#',
                                 analytics: {
                                     category: "@category",
-                                    action: "@language-Clicked Choose Your Refer Configuration",
-                                    label: "See all Refer"
+                                    action: "Clicked Choose Your Cooking Configuration",
+                                    label: "See all Cooking"
                                 }
                             },
                             products: [
                                 {
-                                    image: "./public/images/products/four-door.png",
-                                    title: "Quatre Portes",
-                                    alt: "test",
-                                    desc: "Ce réfrigérateur vous permettra non seulement de ranger vos articles, mais de le faire à votre façon. Grâce au tiroir-réfrigérateur à température réglable et au bac coulissant EasySlide, vous pouvez maintenant ranger et conserver tout ce que vous voulez, exactement comme vous le voulez. Par ailleurs, la conception épurée de ce modèle à 4 portes lui confère une grande élégance extérieure.",
-                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Top_Freezer-3/102290031+112290217/",
-                                    id: "four-door",
+                                    image: "./public/images/products/front_control.png",
+                                    thumb: "./public/images/products/front_control-sml.png",
+                                    title: "Cuisinière à commandes frontales",
+                                    alt: "Cuisinière à commandes frontales",
+                                    desc: "Les commandes frontales sont conçues pour un accès facile, ont un aspect robuste intégré qui s'agence sans effort à tout comptoir. Vous souhaitez l'installer au bout du comptoir? Aucun problème : les côtés sont finis, et l'allure de votre nouvelle cuisinière sera impeccable.",
+                                    link: "http://www.maytag.ca/fr_CA/kitchen-1/cooking-2/ranges-3/-[YMES8880DS]-5511597/YMES8880DS/",
+                                    id: "fcr",
                                     ctaText: "En savoir plus",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Choose Your Refer Configuration",
-                                        label: "Four-door",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Front Control",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/french-door.png",
-                                    title: "Portes Françaises",
-                                    alt: "test",
-                                    desc: "Plus grande capacité. Plus d'options de rangement. Les réfrigérateurs à portes françaises sont conçus pour être pratiques. Cela signifie que vos aliments se trouvent au niveau des yeux et que vos articles congelés préférés sont faciles à ranger. Par ailleurs, ce modèle est conçu pour s'agencer harmonieusement à toute cuisine.",
-                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_French_Door-3/102290031+4294966906/",
-                                    id: "french-door",
+                                    image: "./public/images/products/rear_control.png",
+                                    thumb: "./public/images/products/rear_control-sml.png",
+                                    title: "Cuisinière à commandes arrière",
+                                    alt: "Cuisinière à commandes arrière",
+                                    desc: "Les cuisinières à commandes arrière sont disponibles dans une grande variété de prix et offrent de nombreux choix de style. Dotées d’un panneau de commandes arrière, elles se placent sans problème entre des placards/comptoirs ou au bout d'un comptoir.",
+                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012+10000150/",
+                                    id: "rcr",
                                     ctaText: "En savoir plus",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Choose Your Refer Configuration",
-                                        label: "French Door",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Rear Control",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/side-by-side.png",
-                                    title: "Côte à Côte",
-                                    alt: "test",
-                                    desc: "Style classique? Oui. Convient à votre espace? Absolument. Davantage d'espace dans les portes signifie que vous pouvez ranger et accéder facilement à vos aliments. Par ailleurs, le réfrigérateur est conçu pour ranger une plus grande quantité de vos articles congelés ou frais. Bien sûr, nous offrons un choix de différentes tailles.",
-                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_SidebySide-3/102290031+4294967038/",
-                                    id: "side-by-side",
+                                    image: "./public/images/products/double_oven.png",
+                                    thumb: "./public/images/products/double_oven-sml.png",
+                                    title: "Cuisinière à four double",
+                                    alt: "Cuisinière à four double",
+                                    desc: "Les fours doubles sont dotés de tailles et configurations variées; le four de petite taille est pratique pour la cuisine de tous les jours et le four de plus grande taille est toujours disponible pour cuire un repas de fête. Quelque soit la configuration que vous choisissez, vous serez assuré de pouvoir cuisiner toute sorte de repas.",
+                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102290012+10000151/",
+                                    id: "dbl-oven",
                                     ctaText: "En savoir plus",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Choose Your Refer Configuration",
-                                        label: "Side-by-side",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Double Oven",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/bottom-freezer.png",
-                                    title: "Congélateur Inférieur",
-                                    alt: "test",
-                                    desc: "Vous ne trouverez pas une façon plus facile d’accéder à vos aliments frais. Vous pouvez compter sur les réfrigérateurs à congélateur inférieur pour garder vos aliments à la hauteur des yeux, vous n'avez donc pas besoin de perdre du temps à chercher lorsque vous êtes pressé. N’est ce pas pratique?",
-                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Bottom_Freezer-3/102290031+4294967048/",
-                                    id: "bottom-freezer",
+                                    image: "./public/images/products/wall_oven.png",
+                                    thumb: "./public/images/products/wall_oven-sml.png",
+                                    title: "Fours muraux",
+                                    alt: "Fours muraux",
+                                    desc: "Les fours muraux sont encastrés, offrant simplicité et polyvalence en termes de configuration de cuisine. Généralement situés à hauteur de poitrine, les plats lourds sont faciles à prendre et à transférer sur le comptoir. Avec Maytag, vous pouvez choisir entre un four à micro-ondes encastré, un four mural simple, double, ou combiné avec un four à micro-ondes.",
+                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Wall_Ovens-3/102290015/",
+                                    id: "wall-ovens",
                                     ctaText: "En savoir plus",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Choose Your Refer Configuration",
-                                        label: "Bottom-Freezer",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Wall Ovens",
                                         learnMore: 'Learn More'
                                     }
                                 },
                                 {
-                                    image: "./public/images/products/top-freezer.png",
-                                    title: "Congélateur Supérieur",
-                                    alt: "test",
-                                    desc: "Excellent rapport qualité-prix. Dans un réfrigérateur à congélateur supérieur, il y a toujours de la place pour ranger les articles frais et surgelés. Par ailleurs, ces modèles à congélateur supérieur sont aussi offerts en tailles plus compactes, vous pouvez alors en utiliser un deuxième lorsque vous avez besoin de plus d'espace de rangement. Vous avez raison, c'est une excellente idée.",
-                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Refrigeration_Refrigerators_Top_Freezer-3/102290031+4294967059/",
-                                    id: "top-freezer",
+                                    image: "./public/images/products/cooktop.png",
+                                    thumb: "./public/images/products/cooktop-sml.png",
+                                    title: "Surfaces de cuisson",
+                                    alt: "Surfaces de cuisson",
+                                    desc: "Les tables de cuisson offrent une surface épurée pour tous vos besoins : ébullition, mijotage et friture. Que la surface de cuisson se trouve sur une cuisinière ou sur une table de cuisson encastrée, la technologie est la même. La surface de cuisson est conçue pour conserver l'élégance de votre cuisine tout en offrant des résultats précis.",
+                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Cooktops-3/102290019/",
+                                    id: "cooktops",
                                     ctaText: "En savoir plus",
                                     ctaBackground: "./public/images/button-background.png",
                                     analytics: {
                                         category: "@category",
-                                        action: "@language-Clicked Choose Your Refer Configuration",
-                                        label: "Top-Freezer",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Cooktops",
+                                        learnMore: 'Learn More'
+                                    }
+                                },
+                                {
+                                    image: "./public/images/products/microwave.png",
+                                    thumb: "./public/images/products/microwave-sml.png",
+                                    title: "Fours à micro&#8209;ondes",
+                                    alt: "Fours à micro&#8209;ondes",
+                                    desc: "Les fours à micro-ondes peuvent s'installer au dessus de votre surface de cuisson, qu'il s'agisse d'une cuisinière ou une table de cuisson, et procurent une puissante hotte de ventilation intégrée. Des fonctions haut de gamme sont aussi offertes, par exemple des fours à micro-ondes à convection qui utilisent des ventilateurs internes et des éléments chauffants séparés afin de faire circuler uniformément l'air chaud.",
+                                    link: "http://www.maytag.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Microwaves-3/102290026/",
+                                    id: "microwaves",
+                                    ctaText: "En savoir plus",
+                                    ctaBackground: "./public/images/button-background.png",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Cooking Configuration",
+                                        label: "Microwaves",
                                         learnMore: 'Learn More'
                                     }
                                 }

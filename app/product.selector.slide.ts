@@ -4,13 +4,17 @@ import {LearnMoreButton} from './landing.learn-more.button'
 @Component({
     selector: 'product-slide',
     template: `
-        <div id="{{fridgeId}}" class="rl-wp-lndng-side">
+        <div class="rl-wp-lndng-side" id="{{fridgeId}}">
+            <div class="rl-wp-lndng-prodLeft">
             <div class="rl-wp-lndng-fridge"><img class="{{fridge}}" src="{{fridge}}" alt="{{fridgeAlt}}" /></div>
-                        <div class="rl-wp-lndng-fridge-title mobile">{{fridgeTitle}}</div>
-            <div class="rl-wp-lndng-fridge-title">{{fridgeTitle}}</div>
+            </div>
+           <div class="rl-wp-lndng-prodRight">
+           <div class="rl-wp-lndng-fridge-title mobile" [innerHTML]="fridgeTitle"></div>
+            <div class="rl-wp-lndng-fridge-title" [innerHTML]="fridgeTitle"></div>
             <div class="rl-wp-lndng-fridge-desc">{{fridgeDescription}}</div>
             <learn-more-button [analytics]="analytics" [link]="fridgeUrl" [text]="ctaText" [backgroundImage]="ctaBackground"></learn-more-button>
-        </div>
+            </div>
+          </div>
     `,
     directives: [LearnMoreButton]
 })

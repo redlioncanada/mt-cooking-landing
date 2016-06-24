@@ -1,6 +1,9 @@
 product-selector {
 	width: 80%;
 	position: relative;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-bottom: 60px !important;
     
     h2{
         font-size: 3em;
@@ -15,7 +18,7 @@ product-selector {
         }
 
         @media screen and (max-width: $mobileBreakpoint) {
-            margin-bottom: 0px;
+            margin-bottom: 0px !important;
         }
 
         @media screen and (max-width: 479px) {
@@ -29,30 +32,21 @@ product-selector {
     }
     
     product-slides {
-        display: block;
+        display: inline-block;
         width: 100%;
-
-        @media screen and (max-width: 479px) {
-            margin-top: 75px;
-        }
+        -webkit-transition: all 1s;
+        transition: all 1s;
     }
     .wp-refer-landing-product-slide{
-        position: absolute;
-        width: 943px;
+        position: relative;
     }
     product-slide {
-        height: 420px;
         display: inline-block;
         position: relative;
-        top: -170px;
-
-        @media screen and (max-width: $mobileBreakpoint) {
-            position: absolute;
-            height: 500px;
-            top: initial;
-            width: 100%;
-            left: 0;
-        }
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
 
         #freezers img {
             margin-left: -50px;
@@ -60,6 +54,10 @@ product-selector {
             @media screen and (max-width: $mobileBreakpoint) {
                 margin: 0 auto;
             }
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
         }
     }
 
@@ -69,10 +67,53 @@ product-selector {
         }
     }
 
+    product-slide:not(.selected) {
+        display: none;
+    }
+
+    .rl-wp-lndng-prodLeft {
+        width: 50%;
+        position: relative;
+        float: left;
+        text-align: right;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            float: none;
+            width: 100%
+        }
+    }
+
+    .rl-wp-lndng-prodRight {
+        width: 35%;
+        position: relative;
+        float: left;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            float: none;
+            width: 100%
+        }
+    }
+
+    .rl-wp-lndng-side{
+        display: none;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
+        }
+    }
+
     > .row{
         background-image: url('../../public/images/refer-select-shadow.png');
         background-repeat: no-repeat;
         background-position-y: 100px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
 
         @media screen and (max-width: $mobileBreakpoint) {
             background-position-y: -30px;
@@ -93,16 +134,14 @@ product-selector {
     }
 
     .rl-wp-lndng-fridge-title{
-        position: absolute;
-        left: 490px;
-        top: 170px;
-        width: 300px;
+        position: relative;
         font-weight: 300;
         font-size: 32px;
         color: #6d6f71 !important;
         opacity: 0;
         line-height: 30px;
         text-align: left;
+        padding-bottom: 10px;
         @include Arial();
 
         @media screen and (max-width: $mobileBreakpoint) {
@@ -111,9 +150,7 @@ product-selector {
     }
     
     learn-more-button{
-        position: absolute;
-        left: 490px;
-        top: 325px;
+        position: relative;
         width: 135px;
         height: 30px;
         opacity: 0;
@@ -125,8 +162,7 @@ product-selector {
     }
     
     .rl-wp-lndng-fridge{
-        left: 165px;
-        position: absolute;
+        position: relative;
         opacity: 0;
 
         @media screen and (max-width: $mobileBreakpoint) {
@@ -135,24 +171,23 @@ product-selector {
             display: block;
             top: 0;
             margin-bottom: 20px;
+            width: 100%;
         }
     }
     
     .rl-wp-lndng-fridge img{
-        height: 420px;
+        width: 350px;
 
         @media screen and (max-width: $mobileBreakpoint) {
             height: 200px;
-            display: block;
-            margin: 0 auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: initial;
         }
     }
     
     .rl-wp-lndng-fridge-desc{
-        position: absolute;
-        left: 490px;
-        top: 215px;
-        width: 300px;
+        position: relative;
         font-size: 18.5px;
         font-weight: 100;
         line-height: 24px;
@@ -160,10 +195,10 @@ product-selector {
         text-rendering: optimizeSpeed;
         opacity: 0;
         text-align: left;
+        padding-bottom: 20px;
 
         @media screen and (max-width: $mobileBreakpoint) {
             @include mobile-block-element;
-            margin-bottom: 30px;
             font-size: 14px !important;
             line-height: 18px !important;
         }
@@ -178,9 +213,10 @@ product-selector {
 
 product-selector-nav {
     position: relative;
-    display: block;
-    top: 0px;
-    height: 275px;
+    display: inline-block;
+    padding-top: 4%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 
     .row {
         position: relative;
@@ -188,6 +224,7 @@ product-selector-nav {
     
     @media screen and (max-width: $mobileBreakpoint) {
         height: 225px;
+        padding-top: 0;
     }
     
     @media screen and (max-width: 479px) {
@@ -347,7 +384,8 @@ product-selector.fr {
     product-selector-nav {
         @media screen and (max-width: 479px) {
             .wp-refer-landing-button p {
-                font-size: 0.3em;
+                font-size: 0.6em;
+                line-height: 11px;
             }
         }
     }

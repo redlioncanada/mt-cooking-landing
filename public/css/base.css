@@ -28,7 +28,8 @@ rl-mt-fcr-landing {
   position: relative;
   display: block;
   margin-top: 40px;
-  background: white; }
+  background: white;
+  overflow: hidden; }
   rl-mt-fcr-landing html, rl-mt-fcr-landing body, rl-mt-fcr-landing div, rl-mt-fcr-landing span, rl-mt-fcr-landing applet, rl-mt-fcr-landing object, rl-mt-fcr-landing iframe, rl-mt-fcr-landing h1, rl-mt-fcr-landing h2, rl-mt-fcr-landing h3, rl-mt-fcr-landing h4, rl-mt-fcr-landing h5, rl-mt-fcr-landing h6, rl-mt-fcr-landing p, rl-mt-fcr-landing blockquote, rl-mt-fcr-landing pre, rl-mt-fcr-landing a, rl-mt-fcr-landing abbr, rl-mt-fcr-landing acronym, rl-mt-fcr-landing address, rl-mt-fcr-landing big, rl-mt-fcr-landing cite, rl-mt-fcr-landing code, rl-mt-fcr-landing del, rl-mt-fcr-landing dfn, rl-mt-fcr-landing em, rl-mt-fcr-landing img, rl-mt-fcr-landing ins, rl-mt-fcr-landing kbd, rl-mt-fcr-landing q, rl-mt-fcr-landing s, rl-mt-fcr-landing samp, rl-mt-fcr-landing small, rl-mt-fcr-landing strike, rl-mt-fcr-landing strong, rl-mt-fcr-landing sub, rl-mt-fcr-landing sup, rl-mt-fcr-landing tt, rl-mt-fcr-landing var, rl-mt-fcr-landing b, rl-mt-fcr-landing u, rl-mt-fcr-landing i, rl-mt-fcr-landing center, rl-mt-fcr-landing dl, rl-mt-fcr-landing dt, rl-mt-fcr-landing dd, rl-mt-fcr-landing ol, rl-mt-fcr-landing ul, rl-mt-fcr-landing li, rl-mt-fcr-landing fieldset, rl-mt-fcr-landing form, rl-mt-fcr-landing label, rl-mt-fcr-landing legend, rl-mt-fcr-landing table, rl-mt-fcr-landing caption, rl-mt-fcr-landing tbody, rl-mt-fcr-landing tfoot, rl-mt-fcr-landing thead, rl-mt-fcr-landing tr, rl-mt-fcr-landing th, rl-mt-fcr-landing td, rl-mt-fcr-landing article, rl-mt-fcr-landing aside, rl-mt-fcr-landing canvas, rl-mt-fcr-landing details, rl-mt-fcr-landing embed, rl-mt-fcr-landing figure, rl-mt-fcr-landing figcaption, rl-mt-fcr-landing footer, rl-mt-fcr-landing header, rl-mt-fcr-landing hgroup, rl-mt-fcr-landing menu, rl-mt-fcr-landing nav, rl-mt-fcr-landing output, rl-mt-fcr-landing ruby, rl-mt-fcr-landing section, rl-mt-fcr-landing summary, rl-mt-fcr-landing time, rl-mt-fcr-landing mark, rl-mt-fcr-landing audio, rl-mt-fcr-landing video {
     margin: 0;
     padding: 0;
@@ -443,20 +444,7 @@ rl-mt-fcr-landing {
         font-size: 1em; } }
   rl-mt-fcr-landing videoplayer > ul {
     overflow: hidden;
-    background-color: #002e5a;
-    /*	li:nth-child(2) {
-			videoplayer-selector {
-				.wp-refer-landing-videoplayer-title {
-					margin-top: -57px;
-				}
-
-				@media(max-width: 479px) {
-					.wp-refer-landing-videoplayer-title {
-						margin-top: -40px;
-					}
-				}
-			}
-		}*/ }
+    background-color: #002e5a; }
     rl-mt-fcr-landing videoplayer > ul li {
       float: left;
       width: 33.3334%;
@@ -498,23 +486,21 @@ rl-mt-fcr-landing {
       width: 100%;
       opacity: 0.45; }
     rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text {
-      height: 100%;
       width: 100%;
-      position: absolute;
-      z-index: 2; }
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      position: absolute; }
       rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text .wp-refer-landing-videoplayer-title, rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text learn-more-button {
-        top: 50%;
         text-align: center;
         color: #FFFFFF;
         border-radius: 15px; }
       rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text .wp-refer-landing-videoplayer-title {
         font-size: 1.7em;
-        margin-top: -20px;
         width: 100%;
         color: #FFFFFF !important; }
         @media screen and (max-width: 820px) {
           rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text .wp-refer-landing-videoplayer-title {
-            margin-top: -10px;
             font-size: 1.0em; } }
       rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text learn-more-button {
         font-size: 0.8em;
@@ -522,6 +508,7 @@ rl-mt-fcr-landing {
         top: 60%;
         width: 42%;
         margin: 0 auto;
+        margin-top: 5px;
         line-height: 25px;
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
@@ -540,8 +527,6 @@ rl-mt-fcr-landing {
           right: 9px; }
         rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text learn-more-button img {
           margin-top: 0; }
-    rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text h2, rl-mt-fcr-landing videoplayer-selector .wp-refer-landing-videoplayer-text > div {
-      position: absolute; }
     rl-mt-fcr-landing videoplayer-selector videoplayer-selector:hover learn-more-button {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
@@ -784,7 +769,10 @@ rl-mt-fcr-landing {
       margin-left: 3px; }
   rl-mt-fcr-landing product-selector {
     width: 80%;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-bottom: 60px !important; }
     rl-mt-fcr-landing product-selector h2 {
       font-size: 3em;
       text-align: center;
@@ -798,7 +786,7 @@ rl-mt-fcr-landing {
           margin-top: 35px; } }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector h2 {
-          margin-bottom: 0px; } }
+          margin-bottom: 0px !important; } }
       @media screen and (max-width: 479px) {
         rl-mt-fcr-landing product-selector h2 {
           height: 20px;
@@ -806,38 +794,66 @@ rl-mt-fcr-landing {
     rl-mt-fcr-landing product-selector #french-door, rl-mt-fcr-landing product-selector #side-by-side, rl-mt-fcr-landing product-selector #bottom-freezer, rl-mt-fcr-landing product-selector #under-counter, rl-mt-fcr-landing product-selector #built-in {
       opacity: 0; }
     rl-mt-fcr-landing product-selector product-slides {
-      display: block;
-      width: 100%; }
-      @media screen and (max-width: 479px) {
-        rl-mt-fcr-landing product-selector product-slides {
-          margin-top: 75px; } }
+      display: inline-block;
+      width: 100%;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
     rl-mt-fcr-landing product-selector .wp-refer-landing-product-slide {
-      position: absolute;
-      width: 943px; }
+      position: relative; }
     rl-mt-fcr-landing product-selector product-slide {
-      height: 420px;
       display: inline-block;
       position: relative;
-      top: -170px; }
-      @media screen and (max-width: 820px) {
-        rl-mt-fcr-landing product-selector product-slide {
-          position: absolute;
-          height: 500px;
-          top: initial;
-          width: 100%;
-          left: 0; } }
+      padding-top: 20px;
+      padding-bottom: 20px;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
       rl-mt-fcr-landing product-selector product-slide #freezers img {
         margin-left: -50px; }
         @media screen and (max-width: 820px) {
           rl-mt-fcr-landing product-selector product-slide #freezers img {
             margin: 0 auto; } }
+      @media screen and (max-width: 820px) {
+        rl-mt-fcr-landing product-selector product-slide {
+          width: 100%; } }
     @media screen and (max-width: 820px) {
       rl-mt-fcr-landing product-selector product-slide:first-of-type {
         position: relative; } }
+    rl-mt-fcr-landing product-selector product-slide:not(.selected) {
+      display: none; }
+    rl-mt-fcr-landing product-selector .rl-wp-lndng-prodLeft {
+      width: 50%;
+      position: relative;
+      float: left;
+      text-align: right;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+      @media screen and (max-width: 820px) {
+        rl-mt-fcr-landing product-selector .rl-wp-lndng-prodLeft {
+          float: none;
+          width: 100%; } }
+    rl-mt-fcr-landing product-selector .rl-wp-lndng-prodRight {
+      width: 35%;
+      position: relative;
+      float: left;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+      @media screen and (max-width: 820px) {
+        rl-mt-fcr-landing product-selector .rl-wp-lndng-prodRight {
+          float: none;
+          width: 100%; } }
+    rl-mt-fcr-landing product-selector .rl-wp-lndng-side {
+      display: none;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+      @media screen and (max-width: 820px) {
+        rl-mt-fcr-landing product-selector .rl-wp-lndng-side {
+          width: 100%; } }
     rl-mt-fcr-landing product-selector > .row {
       background-image: url("../../public/images/refer-select-shadow.png");
       background-repeat: no-repeat;
-      background-position-y: 100px; }
+      background-position-y: 100px;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector > .row {
           background-position-y: -30px; } }
@@ -857,25 +873,21 @@ rl-mt-fcr-landing {
           margin-bottom: 10px;
           color: #000000 !important; } }
     rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge-title {
-      position: absolute;
-      left: 490px;
-      top: 170px;
-      width: 300px;
+      position: relative;
       font-weight: 300;
       font-size: 32px;
       color: #6d6f71 !important;
       opacity: 0;
       line-height: 30px;
       text-align: left;
+      padding-bottom: 10px;
       font-family: Arial, sans-serif;
       font-weight: 200; }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge-title {
           display: none; } }
     rl-mt-fcr-landing product-selector learn-more-button {
-      position: absolute;
-      left: 490px;
-      top: 325px;
+      position: relative;
       width: 135px;
       height: 30px;
       opacity: 0;
@@ -889,8 +901,7 @@ rl-mt-fcr-landing {
           text-align: center;
           margin: 0 auto; } }
     rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge {
-      left: 165px;
-      position: absolute;
+      position: relative;
       opacity: 0; }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge {
@@ -898,26 +909,26 @@ rl-mt-fcr-landing {
           position: relative;
           display: block;
           top: 0;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px;
+          width: 100%; } }
     rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge img {
-      height: 420px; }
+      width: 350px; }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge img {
           height: 200px;
-          display: block;
-          margin: 0 auto; } }
+          margin-left: 50%;
+          transform: translateX(-50%);
+          width: initial; } }
     rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge-desc {
-      position: absolute;
-      left: 490px;
-      top: 215px;
-      width: 300px;
+      position: relative;
       font-size: 18.5px;
       font-weight: 100;
       line-height: 24px;
       letter-spacing: 1px;
       text-rendering: optimizeSpeed;
       opacity: 0;
-      text-align: left; }
+      text-align: left;
+      padding-bottom: 20px; }
       @media screen and (max-width: 820px) {
         rl-mt-fcr-landing product-selector .rl-wp-lndng-fridge-desc {
           position: relative;
@@ -926,7 +937,6 @@ rl-mt-fcr-landing {
           display: block;
           text-align: center;
           margin: 0 auto;
-          margin-bottom: 30px;
           font-size: 14px !important;
           line-height: 18px !important; } }
       @media screen and (max-width: 1366px) {
@@ -935,14 +945,16 @@ rl-mt-fcr-landing {
           line-height: 24px; } }
   rl-mt-fcr-landing product-selector-nav {
     position: relative;
-    display: block;
-    top: 0px;
-    height: 275px; }
+    display: inline-block;
+    padding-top: 4%;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     rl-mt-fcr-landing product-selector-nav .row {
       position: relative; }
     @media screen and (max-width: 820px) {
       rl-mt-fcr-landing product-selector-nav {
-        height: 225px; } }
+        height: 225px;
+        padding-top: 0; } }
     @media screen and (max-width: 479px) {
       rl-mt-fcr-landing product-selector-nav {
         height: 400px; } }
@@ -1053,7 +1065,8 @@ rl-mt-fcr-landing {
       margin-top: 73px; } }
   @media screen and (max-width: 479px) {
     rl-mt-fcr-landing product-selector.fr product-selector-nav .wp-refer-landing-button p {
-      font-size: 0.3em; } }
+      font-size: 0.6em;
+      line-height: 11px; } }
   rl-mt-fcr-landing product-selector.fr .rl-wp-lndng-fridge-desc {
     width: 370px; }
   rl-mt-fcr-landing product-selector.fr learn-more-button {
@@ -1076,11 +1089,9 @@ rl-mt-fcr-landing {
         left: 0; } }
   rl-mt-fcr-landing learn-more-button {
     display: block;
-    position: absolute;
-    top: 50%;
+    position: relative;
     width: 180px;
     height: 40px;
-    margin-top: -20px;
     color: #FFFFFF;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -1198,6 +1209,7 @@ rl-mt-fcr-landing {
     rl-mt-fcr-landing banner img {
       width: 100%; }
     rl-mt-fcr-landing banner learn-more-button {
+      position: absolute;
       top: 54%;
       right: 2%;
       width: 15%;
@@ -1288,9 +1300,6 @@ rl-mt-fcr-landing {
       margin-top: initial; } }
   rl-mt-fcr-landing sup {
     font-size: 0.5em; }
-
-.device-mobile rl-mt-refer-landing videoplayer li:nth-child(2) videoplayer-selector div.wp-refer-landing-videoplayer-title {
-  margin-top: -20px; }
 
 [class*="explorer"] features .mt-landing-feature-button-over:hover {
   opacity: 1; }

@@ -340,7 +340,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     desc: "Éléments à considérer lorsque vous magasinez",
                                     ctaText: "Cliquez ici",
                                     ctaBackground: "./public/images/button-background.png",
-                                    link: "#",
+                                    link: "/other-assets/fr_CA/pdf/MT_Cooking_Buying_Guide_FR.pdf",
                                     type: "cart",
                                     analytics: {
                                         category: "@category",
@@ -411,9 +411,9 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     }
                                 },
                                 {
-                                    title: "FIT System Guarantee(fr)",
+                                    title: "Garantie Limitée du Système D’installation FIT",
                                     image: "./public/images/more-features-3.jpg",
-                                    link: "http://www.maytag.ca/other-assets/fr_CA/pdf/FIT_Wall%20Oven_Guarantee_MTG_CANADA_2016_FINAL.pdf",
+                                    link: "http://www.maytag.ca/other-assets/fr_CA/pdf/FIT_Wall%20Oven_Guarantee_MTG_CANADA_FR_2016_FINAL.pdf",
                                     alt: "test",
                                     text: "",
                                     cta: "",
@@ -427,10 +427,10 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                         },
                         videoplayer: {
                             enabled: true,
-                            title: "Built Better(fr)",
+                            title: "Mieux Construit",
                             videos: [
                                 {
-                                    id: '14R7RmMFzf8',
+                                    image: './public/images/video-thumb-1.jpg',
                                     thumb: './public/images/video-select-1.jpg',
                                     title: 'Fours Maytag<sup>&reg;</sup> – mettez-vous aux fourneaux / monsieur Maytag<sup>&reg;</sup>',
                                     alt: "test",
@@ -445,7 +445,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     }
                                 },
                                 {
-                                    id: 'igvVlpAIJzc',
+                                    image: './public/images/video-thumb-2.jpg',
                                     thumb: './public/images/video-select-2.jpg',
                                     title: 'Cuisinières Maytag<sup>&reg;</sup> – fonction de préchauffage rapide power preheat',
                                     alt: "test",
@@ -460,7 +460,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     }
                                 },
                                 {
-                                    id: 'b5npNHPD3T4',
+                                    image: './public/images/video-thumb-3.jpg',
                                     thumb: './public/images/video-select-3.jpg',
                                     title: 'Cuisinières Maytag<sup>&reg;</sup>  – convection véritable evenair',
                                     alt: "test",

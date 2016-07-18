@@ -17,7 +17,7 @@ declare var $: JQueryStatic;
                     <div class="mt-landing-feature-button-over-container">
                         <div class="mt-landing-feature-button-over-table">
                             <div class="mt-landing-feature-button-over-table-cell">
-                                <p class="mt-landing-over-copy">{{btnRollOverCopy}}</p>
+                                <p class="mt-landing-over-copy" [innerHTML]="btnRollOverCopy"></p>
                                 <p class="mt-landing-over-cta">{{btnRollOverCTA}}</p>
                             </div>
                         </div>

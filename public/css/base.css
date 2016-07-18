@@ -767,6 +767,8 @@ rl-mt-fcr-landing {
     rl-mt-fcr-landing features feature-button:last-of-type .mt-landing-feature-button {
       margin-right: 0px;
       margin-left: 3px; }
+  rl-mt-fcr-landing features.fr .mt-landing-feature-title {
+    font-size: 1em; }
   rl-mt-fcr-landing product-selector {
     width: 80%;
     position: relative;

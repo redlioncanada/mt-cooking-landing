@@ -21,6 +21,7 @@ import {Banner} from './landing.banner'
 import {Header} from './landing.header'
 import {Footer} from './landing.footer'
 
+declare var window
 
 @Component({
     selector: 'rl-mt-fcr-landing',
@@ -44,7 +45,7 @@ class AppComponent {
     		return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'
     	})
         analytics.bind('category', function(str) {
-            return 'Refer Landing Page'
+            return 'Cooking Landing Page'
         })
 
         breakpoint.add('mobile', 480)
@@ -57,9 +58,16 @@ class AppComponent {
         this.env.afterViewInit()
         this.analytics.afterViewInit()
 
-        if (this.env.isDev()) {
+        if (this.env.isDev() || this.env.isStaging()) {
             this.analytics.debugMode(true)
             this.breakpoint.debugMode(true)
+        }
+
+        window.__RL_DEBUG = {
+            environment: this.env,
+            analytics: this.analytics,
+            breakpoint: this.breakpoint,
+            appdata: this.appdata
         }
     }
  }

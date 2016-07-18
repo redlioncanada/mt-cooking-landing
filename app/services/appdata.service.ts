@@ -24,12 +24,7 @@ export class AppDataService {
 				link: '/en_CA/2_3_1121/jump-page_may-is-maytag-promo.content.html',
 				image: './public/images/banner.jpg',
 				ctaText: 'Learn More',
-				ctaBackground: './public/images/button-background.png',
-				analytics: {
-					category: "@category",
-					action: "Clicked Footer Banner",
-					label: "May-Is-Maytag-Learn-More"
-				}
+				ctaBackground: './public/images/button-background.png'
 			},
 			features: {
 				enabled: true,
@@ -309,12 +304,7 @@ export class AppDataService {
 				link: '/en_CA/2_3_1121/jump-page_may-is-maytag-promo.content.html',
 				image: './public/images/banner_fr.jpg',
 				ctaText: 'En savoir plus',
-				ctaBackground: './public/images/button-background.png',
-				analytics: {
-					category: "@category",
-					action: "Clicked Footer Banner",
-					label: "May-Is-Maytag-Learn-More"
-				}
+				ctaBackground: './public/images/button-background.png'
 			},
 			features: {
 				enabled: true,
@@ -353,7 +343,7 @@ export class AppDataService {
 						image: "./public/images/refer-landing-mag-glass.png",
 						title: "Trouvez Votre Électroménager Maytag",
 						alt: "test",
-						desc: "Vous avez besoin d'aide pour trouver une cuisinière?",
+						desc: "Vous avez besoin d'aide pour trouver<br/>une cuisinière?",
 						ctaText: "Cliquez ici",
 						ctaBackground: "./public/images/button-background.png",
 						link: "http://trouvermon.maytag.ca",

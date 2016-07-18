@@ -48,7 +48,19 @@ System.register(['angular2/core', './logger.service', './environment.service'], 
                     }
                     else {
                         if (this.enabled) {
-                            ga('send', 'event', props.category ? props.category : '', props.action ? props.action : '', props.label ? props.label : '');
+                            if (!('category' in props && props.category)) {
+                                this.logger.error(this, "ignored a " + props.eventType + " event because category is undefined!");
+                            }
+                            else if (!('action' in props && props.action)) {
+                                this.logger.error(this, "ignored a " + props.eventType + " event because action is undefined!");
+                            }
+                            else if (!('label' in props && props.label)) {
+                                // this.logger.error(this, `ignored a ${props.eventType} event because label is undefined!`)
+                                ga('send', 'event', props.category, props.action);
+                            }
+                            else {
+                                ga('send', 'event', props.category, props.action, props.label);
+                            }
                         }
                         else {
                             this.logger.error(this, "ignored a " + props.eventType + " event with the name " + props.action + " because ga hasn't loaded yet!");

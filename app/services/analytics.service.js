@@ -29,15 +29,15 @@ System.register(['angular2/core', './logger.service', './environment.service'], 
                     this.logger = logger;
                     this.env = env;
                     this.debug = false;
+                    this.enabled = false;
                     this.bindings = [];
+                    this.createGAObject();
                 }
                 AnalyticsService.prototype.afterViewInit = function () {
-                    this.window = window;
                     if (!this.enabled)
                         this.enabled = this.gaObjectExists();
                 };
                 AnalyticsService.prototype.sendEvent = function (props) {
-                    this.enabled = this.gaObjectExists();
                     props = this.fillBindings(props);
                     if (this.propsAreEmpty(props)) {
                         this.logger.error(this, "ignored a " + props.eventType + " event because all of it's properties are empty!");
@@ -63,14 +63,29 @@ System.register(['angular2/core', './logger.service', './environment.service'], 
                             }
                         }
                         else {
-                            this.logger.error(this, "ignored a " + props.eventType + " event with the name " + props.action + " because ga hasn't loaded yet!");
+                            this.logger.error(this, "ignored a " + props.eventType + " event with the name " + props.action + " because no UA code has been specified!");
                         }
                     }
                 };
+                AnalyticsService.prototype.setUA = function (ua) {
+                    this.ua = ua;
+                    if (this.gaObjectExists()) {
+                        ga('create', this.ua, 'auto');
+                        this.enabled = true;
+                        this.logger.log(this, "Created an analytics instance with code " + this.ua);
+                    }
+                };
                 AnalyticsService.prototype.bind = function (keyword, fn) {
-                    if (typeof fn !== 'function')
-                        return;
-                    this.bindings.push({ 'keyword': keyword, 'function': fn });
+                    if (typeof keyword == 'string') {
+                        if (typeof fn !== 'function')
+                            return;
+                        this.bindings.push({ 'keyword': keyword, 'function': fn });
+                    }
+                    else if (typeof keyword == 'object') {
+                        for (var k in keyword) {
+                            this.bind(k, keyword[k]);
+                        }
+                    }
                 };
                 AnalyticsService.prototype.debugMode = function (val) {
                     if (val)
@@ -89,7 +104,20 @@ System.register(['angular2/core', './logger.service', './environment.service'], 
                     return true;
                 };
                 AnalyticsService.prototype.gaObjectExists = function () {
-                    return this.window && 'ga' in this.window && typeof this.window['ga'] !== 'undefined' && this.window['ga'];
+                    return window && ('ga' in window) && window['ga'] && typeof window['ga'] !== 'undefined';
+                };
+                AnalyticsService.prototype.createGAObject = function () {
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r;
+                        i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments);
+                        }, i[r].l = 1 * new Date();
+                        a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                        a.async = 1;
+                        a.src = g;
+                        m.parentNode.insertBefore(a, m);
+                    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga', undefined, undefined);
                 };
                 AnalyticsService.prototype.fillBindings = function (arr) {
                     for (var i in arr) {

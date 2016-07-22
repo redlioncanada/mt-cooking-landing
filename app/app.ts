@@ -41,12 +41,11 @@ class AppComponent {
     constructor(private appdata: AppDataService, private analytics: AnalyticsService, private breakpoint: BreakpointService, private env: EnvironmentService) {
     	this.language = appdata.language
 
-    	analytics.bind('language', function(str) {
-    		return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'
-    	})
-        analytics.bind('category', function(str) {
-            return 'Cooking Landing Page'
-        })
+        analytics.setUA('UA-39471211-2')
+    	analytics.bind({
+            'language': function(str) {return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'},
+            'category': function(str) {return 'Cooking Landing Page'}
+        }, undefined)
 
         breakpoint.add('mobile', 480)
         breakpoint.add('tablet', 481)

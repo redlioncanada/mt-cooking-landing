@@ -2,28 +2,28 @@ import {Injectable} from 'angular2/core'
 import {LoggerService} from './logger.service'
 import {EnvironmentService} from './environment.service'
 
-declare var ga;
+declare var ga
+declare var window
 
 @Injectable()
 export class AnalyticsService {
 	public enabled: boolean
+	public ua: string
 	private debug: boolean
 	private bindings
-	private window
 
 	constructor(private logger: LoggerService, private env: EnvironmentService) {
 		this.debug = false
+		this.enabled = false
 		this.bindings = []
+		this.createGAObject()
 	}
 
 	public afterViewInit() {
-		this.window = window
 		if (!this.enabled) this.enabled = this.gaObjectExists()
 	}
 
 	public sendEvent(props) {
-		this.enabled = this.gaObjectExists()
-
 		props = this.fillBindings(props)
 
 		if (this.propsAreEmpty(props)) {
@@ -46,14 +46,30 @@ export class AnalyticsService {
 					ga('send', 'event', props.category, props.action, props.label)
 				}
 			} else {
-				this.logger.error(this, `ignored a ${props.eventType} event with the name ${props.action} because ga hasn't loaded yet!`)
+				this.logger.error(this, `ignored a ${props.eventType} event with the name ${props.action} because no UA code has been specified!`)
 			}
 		}
 	}
 
+	public setUA(ua:string) {
+		this.ua = ua
+
+		if (this.gaObjectExists()) {
+			ga('create', this.ua, 'auto')
+			this.enabled = true
+			this.logger.log(this,`Created an analytics instance with code ${this.ua}`)
+		}
+	}
+
 	public bind(keyword, fn) {
-		if (typeof fn !== 'function') return
-		this.bindings.push({ 'keyword': keyword, 'function': fn })
+		if (typeof keyword == 'string') {
+			if (typeof fn !== 'function') return
+			this.bindings.push({ 'keyword': keyword, 'function': fn })
+		} else if (typeof keyword == 'object') {
+			for (var k in keyword) {
+				this.bind(k, keyword[k])
+			}
+		}
 	}
 
 	public debugMode(val: boolean) {
@@ -71,7 +87,14 @@ export class AnalyticsService {
 	}
 
 	private gaObjectExists() {
-		return this.window && 'ga' in this.window && typeof this.window['ga'] !== 'undefined' && this.window['ga']
+		return window && ('ga' in window) && window['ga'] && typeof window['ga'] !== 'undefined'
+	}
+
+	private createGAObject() {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga',undefined,undefined);
 	}
 
 	private fillBindings(arr) {
